@@ -6,7 +6,7 @@ Minimal Xen Dom0 bootable ISO with LINCX preinstalled
  * Both BIOS and UEFI boots are supported
  * x86_64 only
  * Initramfs only (no disks required)
- * Full [LINCX](https://github.com/FlowForwarding/lincx) toolchain included (Erlang/OTP, [LING](https://github.com/cloudozer/ling)
+ * Full [LINCX](https://github.com/FlowForwarding/lincx) toolchain included (Erlang/OTP, [LING](https://github.com/cloudozer/ling))
 
 # Install
 
