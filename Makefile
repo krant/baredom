@@ -17,7 +17,7 @@ iso/efiboot.img: buildroot/output/target/usr/bin/xl
 	cp buildroot/output/build/xen-master/xen/xen.efi efiboot/EFI/boot
 	mkdir -p iso
 	mkdir -p img
-	truncate -s 55M iso/efiboot.img
+	truncate -s 50M iso/efiboot.img
 	mkfs.vfat -n BAREDOM iso/efiboot.img
 	sudo mount iso/efiboot.img img
 	sudo cp -r efiboot/* img

@@ -32,6 +32,7 @@ endef
 define XEN_INSTALL_TARGET_CMDS
         $(TARGET_MAKE_ENV) $(MAKE) -C $(@D) $(XEN_MAKE_ENV) DESTDIR=$(TARGET_DIR) install
 	cp $(TARGET_DIR)/etc/init.d/xencommons $(TARGET_DIR)/etc/init.d/S50xencommons
+	rm -rf $(TARGET_DIR)/boot
 endef
 
 $(eval $(generic-package))
