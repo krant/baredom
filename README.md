@@ -16,7 +16,7 @@ Make sure you have prerequisites
 ```
 Clone repo, launch make and wait a while. Enter sudo password when asked.
 ```
- $ git clone https://github.com/cloudozer/baredom.git
+ $ git clone https://github.com/krant/baredom.git
  $ cd baredom
  $ make
 ```
