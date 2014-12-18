@@ -1,0 +1,8 @@
+config BR2_PACKAGE_LINCX
+	bool "lincx"
+	select BR2_PACKAGE_XEN
+	select BR2_PACKAGE_ERLANG
+	select BR2_PACKAGE_BINUTILS
+	help
+		LINCX is a pure OpenFlow software switch written in Erlang.
+		It runs within a separate domain under Xen hypervisor using LING.

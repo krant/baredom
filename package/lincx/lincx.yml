@@ -1,0 +1,14 @@
+# ipconf: dhcp
+ipconf: 
+  ipaddr: 10.0.0.2
+  netmask: 255.255.255.0
+  gateway: 10.0.0.1
+
+ports:
+  - {id: 1, bridge: br1}
+  - {id: 2, bridge: br2}
+
+controllers:
+  - 192.168.1.1:6633
+
+listen: 0.0.0.0:6653

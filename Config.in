@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL/package/lincx/Config.in"
+source "$BR2_EXTERNAL/package/xen/Config.in"

@@ -1,0 +1,43 @@
+#!/bin/sh
+
+brctl addbr xenbr0
+ip link set up xenbr0
+ip ad ad 10.0.0.1/24 dev xenbr0
+
+brctl addbr br1
+ip link set up br1
+
+brctl addbr br2
+ip link set up br2
+
+cd /root/lincx && ./rebar compile && ./railing image
+echo
+echo "##      ## ######## ##        ######   #######  ##     ## ########    ########  #######  ";
+echo "##  ##  ## ##       ##       ##    ## ##     ## ###   ### ##             ##    ##     ## ";
+echo "##  ##  ## ##       ##       ##       ##     ## #### #### ##             ##    ##     ## ";
+echo "##  ##  ## ######   ##       ##       ##     ## ## ### ## ######         ##    ##     ## ";
+echo "##  ##  ## ##       ##       ##       ##     ## ##     ## ##             ##    ##     ## ";
+echo "##  ##  ## ##       ##       ##    ## ##     ## ##     ## ##             ##    ##     ## ";
+echo " ###  ###  ######## ########  ######   #######  ##     ## ########       ##     #######  ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                                                                         ";
+echo "                                             ##       #### ##    ##  ######  ##     ##   ";
+echo "                                             ##        ##  ###   ## ##    ##  ##   ##    ";
+echo "                                             ##        ##  ####  ## ##         ## ##     ";
+echo "                                             ##        ##  ## ## ## ##          ###      ";
+echo "                                             ##        ##  ##  #### ##         ## ##     ";
+echo "                                             ##        ##  ##   ### ##    ##  ##   ##    ";
+echo "                                             ######## #### ##    ##  ######  ##     ##   ";
+echo
+echo To reconfigure:
+echo      vi lincx.yml
+echo      ./railing image
+echo
+echo To launch:
+echo      xl create -c domain_config
+echo

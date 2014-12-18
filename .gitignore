@@ -1,0 +1,8 @@
+buildroot
+baredom.iso
+img
+iso
+efiboot/EFI/boot/bzImage
+efiboot/EFI/boot/rootfs.cpio
+efiboot/EFI/boot/xen.efi
+
